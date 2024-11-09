@@ -7,7 +7,7 @@
 //
 
 // Import the database connection
-const db = require("../../database/database");
+const db = require("../database/database");
 
 // Function to add a new category to the database
 const addCategory = (name) => {

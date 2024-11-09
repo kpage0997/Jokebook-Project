@@ -7,7 +7,7 @@
 //
 
 // Import the jokeModel functions
-const jokeModel = require("./models/jokeModel");
+const jokeModel = require("../models/jokeModel");
 
 // Controller function to get all categories
 
