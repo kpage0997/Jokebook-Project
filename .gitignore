@@ -1,2 +1,11 @@
-node_modules
-server.js
+# Ignore node_modules
+/node_modules
+
+# Ignore log files
+*.log
+
+# Ignore environment variables file
+.env
+
+# Ignore server.js file in the root directory
+/server.js
