@@ -9,8 +9,8 @@
 const express = require("express");
 const path = require("path");
 const sqlite = require("better-sqlite3");
-const db = require("./Jokebook/database/database");
-const jokeRoutes = require("./Jokebook/routes/jokeRoutes");
+const db = require("./database/database");
+const jokeRoutes = require("./routes/jokeRoutes");
 
 const app = express();
 
