@@ -1,0 +1,31 @@
+/* 
+Name: Kennedy Page
+Date: 11.10.2024
+Course: CSC 372-01
+
+This file contains the CSS styles for the Joke Book application, defining the layout, colors, and appearance of the HTML elements.
+*/
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.joke {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin: 10px 0;
+}
+
+input, select, button {
+    padding: 10px;
+    margin: 5px 0;
+}
+

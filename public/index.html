@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<!-- 
+Name: Kennedy
+Date: 11.10.2024
+CSC 372-01
+
+This is the main HTML file for the Joke Book application. It serves as the user interface to display jokes and categories.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joke Book</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Random Joke</h1>
+    <div id="randomJoke" class="joke"></div>
+
+    <section id="jokesByCategorySection">
+      <h2>Jokes in Category</h2>
+      <select id="categorySelect" onchange="fetchJokesByCategory(this.value)">
+        <option value="" disabled selected>Select a category</option>
+      </select>
+      <div id="jokesContainer" class="joke-list"></div>
+    </section>
+
+    <section id="addJokeSection">
+      <h2>Add a New Joke</h2>
+      <form id="addJokeForm" onsubmit="addNewJoke(event)">
+        <select id="newCategory" required>
+          <option value="" disabled selected>Select a category</option>
+        </select>
+        <input type="text" id="newSetup" placeholder="Setup" required />
+        <input type="text" id="newDelivery" placeholder="Delivery" required />
+        <button type="submit">Add Joke</button>
+      </form>
+      <div id="messageContainer" class="message"></div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
