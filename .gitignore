@@ -10,3 +10,6 @@
 # Ignore server.js file in the root directory
 /server.js
 .vercel
+
+# Ignore database file
+jokebook.db
