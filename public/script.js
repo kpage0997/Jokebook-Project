@@ -133,7 +133,7 @@ function addNewJoke(event) {
     return;
   }
 
-  fetch("'/api/add-joke'", {
+  fetch("/jokebook/joke/new", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

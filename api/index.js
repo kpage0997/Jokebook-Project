@@ -7,16 +7,14 @@ const jokeRoutes = require("../routes/jokeRoutes");
 const app = express();
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname, '../public')));
-
-// Route for the home page
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public', 'index.html'));
-  });
-  
-  
+app.use(express.static(path.join(__dirname, "../public")));
 
 app.use("/jokebook", jokeRoutes);
+
+// Route for the home page
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "../public", "index.html"));
+});
 
 // Set the port for the server to listen on
 const PORT = process.env.PORT || 3000;
