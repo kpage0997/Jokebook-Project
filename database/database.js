@@ -4,7 +4,10 @@
 //Connect to sqlite databse
 const sqlite = require("better-sqlite3");
 
-const db = sqlite(__dirname + "/jokebook.db", { verbose: console.log });
+const db = sqlite(__dirname + "/jokebook.db", {
+  verbose: console.log,
+  readonly: false, // Ensure it's not read-only
+});
 
 //Create categories and jokes tables
 db.prepare(
