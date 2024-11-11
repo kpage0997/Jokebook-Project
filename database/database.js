@@ -1,12 +1,8 @@
 //database.js
-
+const Database = require("better-sqlite3");
 
 //Connect to sqlite databse
-const sqlite = require("better-sqlite3");
-
-const path = require('path');
-const dbPath = path.resolve(__dirname, 'jokebook.db');
-const db = new sqlite(dbPath, { verbose: console.log, readonly: false });
+const db = new Database(__dirname + "/jokebook.db", { verbose: console.log });
 
 //Create categories and jokes tables
 db.prepare(

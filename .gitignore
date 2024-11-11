@@ -11,5 +11,3 @@
 /server.js
 .vercel
 
-# Ignore database file
-jokebook.db
